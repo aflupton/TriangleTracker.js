@@ -9,19 +9,26 @@ describe('Triangle', function() {
     expect(triangle.side3).not.toEqual(6);
   });
 
+  it('should test if triangle is equilateral triangle', function(){
+    var triangle = new Triangle(7,7,7);
+    expect(triangle.side1).toEqual(7);
+    expect(triangle.side2).toEqual(7);
+    expect(triangle.side3).toEqual(7);
+  });
+
   it('should correctly determine whether three lengths can be made into a triangle', function() {
     var notTriangle = new Triangle(3,9,22);
     expect(notTriangle.checkType()).toEqual("not a triangle");
   });
+});
+describe('Triangle', function(){
+  var reusableTriangle;
 
-  describe('Triangle', function(){
-    var reusableTriangle;
-
-    beforeEach(function(){
-      reusableTriangle = new Triangle(5,5,5);
-    });
-    it('should show hoe beforeEach() works', function(){
-      console.log(reusableTriangle);
-    });
+  beforeEach(function(){
+    reusableTriangle = new Triangle(5,5,5);
   });
+  it('should show how beforeEach() works', function(){
+    console.log(reusableTriangle);
+  });
+
 });
