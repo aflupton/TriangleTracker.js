@@ -1,1 +1,1 @@
-import { Triangle } from './../js/triangletracker.js';
+import { Triangle } from './js/triangle.js';

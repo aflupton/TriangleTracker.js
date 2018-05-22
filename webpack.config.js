@@ -51,7 +51,6 @@ module.exports = {
         exclude: /node_modules/,
         loader: "eslint-loader"
       },
-      // new rule
       {
         test: /\.js$/,
         exclude: [
@@ -63,6 +62,14 @@ module.exports = {
           presets: ['es2015']
         }
       }
+      // new rule
+      // {
+      //   test: /\.js$/,
+      //   exclude: [
+      //     /node_modules/,
+      //     /spec/
+      //   ],
+      // }
     ]
   }
 };
